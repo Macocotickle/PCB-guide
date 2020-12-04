@@ -233,4 +233,80 @@ Wire Wire Line
 Connection ~ 2150 4450
 Wire Wire Line
 	2150 4450 2000 4450
+$Comp
+L power:+5V #PWR?
+U 1 1 5FCCC8B0
+P 2300 3100
+F 0 "#PWR?" H 2300 2950 50  0001 C CNN
+F 1 "+5V" H 2315 3273 50  0000 C CNN
+F 2 "" H 2300 3100 50  0001 C CNN
+F 3 "" H 2300 3100 50  0001 C CNN
+	1    2300 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 3100 2800 3100
+$Comp
+L Device:Crystal_GND24_Small Y?
+U 1 1 5FCCDCE4
+P 2350 2600
+F 0 "Y?" V 2304 2744 50  0000 L CNN
+F 1 "16MHz" V 2395 2744 50  0000 L CNN
+F 2 "" H 2350 2600 50  0001 C CNN
+F 3 "~" H 2350 2600 50  0001 C CNN
+	1    2350 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2800 2500 2350 2500
+Wire Wire Line
+	2800 2700 2350 2700
+$Comp
+L Device:C_Small C?
+U 1 1 5FCCFDBA
+P 1800 2750
+F 0 "C?" V 1571 2750 50  0000 C CNN
+F 1 "C_Small" V 1662 2750 50  0000 C CNN
+F 2 "" H 1800 2750 50  0001 C CNN
+F 3 "~" H 1800 2750 50  0001 C CNN
+	1    1800 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5FCD0EF1
+P 1800 2450
+F 0 "C?" V 1571 2450 50  0000 C CNN
+F 1 "C_Small" V 1662 2450 50  0000 C CNN
+F 2 "" H 1800 2450 50  0001 C CNN
+F 3 "~" H 1800 2450 50  0001 C CNN
+	1    1800 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FCD3B42
+P 1700 2900
+F 0 "#PWR?" H 1700 2650 50  0001 C CNN
+F 1 "GND" H 1705 2727 50  0000 C CNN
+F 2 "" H 1700 2900 50  0001 C CNN
+F 3 "" H 1700 2900 50  0001 C CNN
+	1    1700 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 2500 1900 2500
+Wire Wire Line
+	1900 2500 1900 2450
+Connection ~ 2350 2500
+Wire Wire Line
+	1700 2450 1700 2750
+Connection ~ 1700 2750
+Wire Wire Line
+	1700 2750 1700 2900
+Wire Wire Line
+	1900 2750 1900 2700
+Wire Wire Line
+	1900 2700 2350 2700
+Connection ~ 2350 2700
 $EndSCHEMATC
