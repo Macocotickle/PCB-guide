@@ -354,7 +354,7 @@ L Device:R_Small R?
 U 1 1 5FCDDD79
 P 2750 1950
 F 0 "R?" H 2809 1996 50  0000 L CNN
-F 1 "R_Small" H 2809 1905 50  0000 L CNN
+F 1 "10k" H 2809 1905 50  0000 L CNN
 F 2 "" H 2750 1950 50  0001 C CNN
 F 3 "~" H 2750 1950 50  0001 C CNN
 	1    2750 1950
@@ -378,4 +378,8 @@ Wire Wire Line
 Connection ~ 2750 2300
 Wire Wire Line
 	2750 2300 2700 2300
+Text GLabel 1300 3300 0    50   Input ~ 0
+D+
+Text GLabel 1300 3400 0    50   Input ~ 0
+D-
 $EndSCHEMATC
